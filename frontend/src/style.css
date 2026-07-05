@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+  background-color: #f5f7fa;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+/* Mode cetak: sembunyikan sidebar & navbar, tampilkan hanya area laporan */
+@media print {
+  .sidebar,
+  header.navbar,
+  .no-print {
+    display: none !important;
+  }
+  main {
+    padding: 0 !important;
+  }
+  body {
+    background-color: #fff !important;
+  }
+  .print-area {
+    box-shadow: none !important;
+    border: 1px solid #ccc;
+  }
+}
